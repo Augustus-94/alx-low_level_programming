@@ -1,2 +1,7 @@
 #!/bin/bash
-tail $CFILE
+
+CFILE=$1
+OUTPUT_FILE="c"
+
+cpp -P "$CFILE" -o "$OUTPUT_FILE"
+
