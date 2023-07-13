@@ -1,7 +1,2 @@
 #!/bin/bash
-
-CFILE=$1
-OUTPUT_FILE="c"
-
-cpp -P "$CFILE" -o "$OUTPUT_FILE"
-
+gcc -E $CFILE -o c
