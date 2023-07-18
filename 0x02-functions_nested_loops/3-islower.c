@@ -1,26 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - entry point
- *
- * Return: always (0)
+ * _islower - entry point
+ * @c: the character in ASCII code
+ * Return: 1  if c is lowercase, 0 otherwise
  */
 
-int main(void)
+int _islower(int c)
 {
-	unsigned long a = 0, b = 1, sum;
-	float SUM;
-
-	while (1)
-	{
-		sum = a + b;
-		if (sum > 4000000)
-			break;
-		if ((sum % 2) == 0)
-			SUM += sum;
-		a = b;
-		b = sum;
-	}
-	printf("%.0f\n", SUM);
-	return (0);
+	if (c <= 'z' && c >= 'a')
+		return (1);
+	else
+		return (0);
+	_putchar('\n');
 }
